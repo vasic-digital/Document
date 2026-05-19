@@ -1,9 +1,73 @@
+# CONST-053 — No-Versioned-Build-Artifacts (cascaded from constitution §11.4.30)
+#
+# Build artefacts
+/bin/
+/build/
+/dist/
+/out/
+target/
 *.exe
+*.exe~
 *.dll
 *.so
 *.dylib
+*.a
+*.o
+*.class
+*.pyc
+
+# Test binaries / coverage / reports
 *.test
 *.out
-.idea/
-
+coverage.out
+coverage.html
+htmlcov/
 reports/demos/
+
+# Caches
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+node_modules/
+.next/
+.cache/
+.gradle/
+.terraform/
+
+# Dependency directories
+vendor/
+
+# Go workspace files
+go.work
+go.work.sum
+
+# IDE / editor
+.idea/
+.vscode/
+.history/
+*.swp
+*.swo
+*~
+*.orig
+*.rej
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sensitive-data files (CONST-042 / CONST-053)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+id_rsa*
+id_ed25519*
+.netrc
+secrets/
+api_keys.sh
+
+# Logs
+*.log

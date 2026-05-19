@@ -1,0 +1,40 @@
+{
+  "_comment": "Round-254 bilingual fixtures for Document. Used by document_describe_challenge.sh + challenges/runner/main.go to verify UTF-8 / non-ASCII text round-trips losslessly through CreateDocument, on-disk filename construction, Document.ToJSON/FromJSON, and DetectByContent regex matrices. CONST-046 alignment (no hardcoded English-only assumption).",
+  "inputs": [
+    {
+      "locale": "en",
+      "title": "README",
+      "extension": "md",
+      "author": "Maintainer",
+      "tags": ["alpha", "beta", "gamma"]
+    },
+    {
+      "locale": "sr",
+      "title": "Документација",
+      "extension": "md",
+      "author": "Аутор",
+      "tags": ["алфа", "бета", "гама"]
+    },
+    {
+      "locale": "ja",
+      "title": "ドキュメント",
+      "extension": "md",
+      "author": "著者",
+      "tags": ["アルファ", "ベータ", "ガンマ"]
+    },
+    {
+      "locale": "ar",
+      "title": "وثيقة",
+      "extension": "md",
+      "author": "المؤلف",
+      "tags": ["ألفا", "بيتا", "غاما"]
+    },
+    {
+      "locale": "zh-CN",
+      "title": "文档",
+      "extension": "md",
+      "author": "作者",
+      "tags": ["阿尔法", "贝塔", "伽马"]
+    }
+  ]
+}
